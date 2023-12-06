@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Districts</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="shortcut icon" href="./src/media/logo.jpeg" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- NAV Bar Start -->
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,17 +37,151 @@
                 <a class="nav-link" href="/contact.html">Contact Us</a>
               </li>
             </ul>
-            <a class="btn btn-outline-success mr-2" href="#" role="button" data-toggle="modal" data-target="#modalSignUpForm">Sign up</a>
-    
-    <a class="btn btn-outline-primary mr-2" href="#" role="button" data-toggle="modal" data-target="#modalLoginForm">Login</a>
-  </div>
-          </div>
+            <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-success me-md-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Sign up
+                </button>
+                <button type="button" class="btn btn-outline-success me-md-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                  Login
+                </button>
+            </div>
+        <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign up</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="text" id="defaultForm-name" class="form-control" placeholder="Full Name">
+          <label data-error="wrong" data-success="right" for="defaultForm-name">Full Name</label>
         </div>
-      </nav>
-       <!-- NAV Bar Ends -->
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingConPassword" placeholder="Re-enter Password">
+          <label for="floatingConPassword">Confirm Password</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">SignUp</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+       
+    </div>
+  </div>
+</div>
+
+<!--Modal END-->
+
+
+        </div>
+      
+    </nav>
+      <!-- NAV Bar Ends -->
 
       <!-- Main Section Start-->
+      
+        <div class="container clear-padding">
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 col-md-12">
+                <div class="single-post-wrapper">
+                    <div class="main-content py-4 ">  
+                        <h2>District wise Kerala Tourist Destinations</h2>							
+                        <p>Here we are listing the most important tourist destinations in the Districts of Kerala. This information may be helpful for the domestic tourists to find the nearest tourist places they visit. This page will be updated frequently.</p>
+                        <p><a href="#Trivandrum"><button type="button" class="btn   btn-success">Trivandrum</button></a><a href="#Kollam"><button type="button" class="btn btn-primary">Kollam</button></a><a href="#Pathanamthitta"><button type="button" class="btn btn-success">Pathanamthitta</button></a><a href="#Alappuzha"><button type="button" class="btn btn-primary">Alappuzha</button></a><a href="#Kottayam"><button type="button" class="btn btn-success">Kottayam</button></a><a href="#Idukki"><button type="button" class="btn btn-primary">Idukki</button></a><a href="#Ernakulam"><button type="button" class="btn btn-success">Ernakulam</button></a><a href="#Trissur"><button type="button" class="btn btn-primary">Trissur</button></a><a href="#Palakkad"><button type="button" class="btn btn-success">Palakkad</button></a><a href="#Malappuram"><button type="button" class="btn btn-primary">Malappuram</button></a><a href="#Kozhikkodu"><button type="button" class="btn btn-success">Kozhikkodu</button></a><a href="#Wayanad"><button type="button" class="btn btn-primary">Wayanad</button></a><a href="#Kannoor"><button type="button" class="btn btn-success">Kannur</button></a><a href="#Kasargodu"><button type="button" class="btn btn-primary">Kasargodu</button></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!--CARDS-->
+    <div class="container">
+        
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card h-100 d-flex align-items-center justify-content-center">
+              <img src="./src/media/district/Vizhinjam_Light_House.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Trivandrum</h5>
+                <p class="card-text">The sandy beach is best for sun bath. Many luxury resorts located in this area those offer wonderful Ayurveda massage to their guests. Kovalam is 16 Kilometers away from Trivandrum city and 24 Kilometers from Trivandrum International Airport. We hope you will thumbs up after visiting this exotic location.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 d-flex align-items-center justify-content-center">
+              <img src="media/image2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kollam</h5>
+                <p class="card-text">This is a short card.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 d-flex align-items-center justify-content-center">
+              <img src="media/image3.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 d-flex align-items-center justify-content-center">
+              <img src="media/image4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+              <div class="card h-100 d-flex align-items-center justify-content-center">
+                <img src="media/image5.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!--Card ends-->
       
       <!-- MAin Ends-->
 
