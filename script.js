@@ -39,22 +39,16 @@ let email1=document.getElementById('floatingInput1');
 let password1=document.getElementById('floatingPassword1');
 let btn2=document.getElementById('btnsub1');
 
-// Signup validation
 btn2.addEventListener('click', () => {
     if (email1.value.trim() === '') {
         alert('Please enter email');
     } 
-    
     else if (password1.value.trim() === '') {
         alert('Please enter password');
     } 
-    
     else {
         alert('Success');
-        
         email1.value="";
         password1.value="";
-        
-        
     }
 });
