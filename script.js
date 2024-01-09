@@ -12,15 +12,22 @@ btn1.addEventListener('click', () => {
     } 
      else if (email.value.trim() === '') {
         alert('Please enter email');
-    } else if (password.value.trim() === '') {
-        alert('Please enter password');
-    } else if (!isEmail.test(email.value.trim())) {
+    } 
+    else if (!isEmail.test(email.value.trim())) {
         alert('Email must be alphanumeric and special character');
-    } else if (conPassword.value.trim()==='') {
-        alert('Confirm Password');
-    } else {
+    } 
+    else if (password.value.trim() === '') {
+        alert('Please enter password');
+    } 
+    else if (conPassword.value.trim()==='') {
+        alert('Please enter Confirm Password');
+    } 
+    else {
         alert('Success');
-        btn1.value = " ";
+        fullname.value="";
+        email.value="";
+        password.value="";
+        conPassword.value="";
         // document.getElementById('form-signup').reset();
         
     }
