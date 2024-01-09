@@ -20,60 +20,8 @@ btn1.addEventListener('click', () => {
         alert('Confirm Password');
     } else {
         alert('Success');
-        btn1.value = "";
+        btn1.value = " ";
         // document.getElementById('form-signup').reset();
         
     }
 });
-
-       
-//         btn1.addEventListener('click', () => {
-            
-//             if (!fullname.value.trim()) {
-//                 alert('Please enter your full name.');
-//                 return; 
-//             }
-
-//             if (!email.value.trim() ) {
-//                 alert('Please enter a valid email.');
-//                 return; 
-//             }
-
-//             if (!message.value.trim()) {
-//                 alert('Please enter your message.');
-//                 return; 
-//             }
-// else 
-
-// { 
-//     return true
-           
-//             alert('Form is valid. Submitting...');
-// }
-//         });
-// let email=document.getElementById('email');
-// let fullName=document.getElementById('fullName');
-// let mesg=document.getElementById('message');
-// let btn1=document.getElementById('btnsub');
-
-//  //Javascript reGex for Email Validation.
-//  let regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  
-
-//  // Javascript reGex for Name validation
-//  let regName = /\d+$/g;     
-
-// btn1.addEventListener('click',()=>{
-//     if (fullName == "" || regName(fullName)) {
-//         window.alert("Please enter your name properly.");
-//         fullName.focus();
-//         return false;
-//     }
-//     if (email == "" || !regEmail(email)) {
-//         window.alert("Please enter a valid e-mail address.");
-//         email.focus();
-//         return false;
-//     }
-//     else return true;
-
-// })
-
